@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     
-    <div id="banner">
+    <!-- <div id="banner">
         <section class="bdt-search bdt-search-selected-bus">
             <div class="bdt-search-inner" style="margin-top:50px">
                 <div class="bdt-search-types">
@@ -18,11 +19,129 @@
                                 <img src="/pic/bus-alt-copy.svg" alt="icon">
                                 BUS
                             </button>
+                            <li>
+                                <button style="font-weight:bold" >
+                                <img src="/images/icon-svg/air.svg" alt="icon">
+                                AIR
+                            </button>
+                            </li>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-    </div>
+    </div> -->
+
+
+
+
+    <div id="hero" class="bg-cover bg-no-repeat">
+        <section class="bdt_search py-20 mx-auto">
+          <div class="bdt_search_inner">
+            <ul class="bdt_search_types">
+              <li>
+                <button class="active">
+                  <img src="pic/bus.svg" alt="Bus icon" />
+                  BUS
+                </button>
+              </li>
+              <li>
+                <button class="">
+                  <img src="pic/svg/air.svg" alt="Air icon" />
+                  AIR
+                </button>
+              </li>
+              <li>
+                <button class="">
+                  <img src={ShipIcon} alt="Ship icon" />
+                  SHIP
+                </button>
+              </li>
+              <li>
+                <button class="">
+                  <img src={SotelIcon} alt="Sotel icon" />
+                  HOTEL
+                </button>
+              </li>
+            </ul>
+            <div class="bdt_search_wrapper">
+              <div class="bdt_search_form">
+                <div class="bdt_input_wrapper relative bg-white">
+                  <div class="bdt_input relative">
+                    <div>
+                      <span class="bdt_input_label">Going From</span>
+                      <span class="bdt_input_value" id="input1">
+                        {input1Text}
+                      </span>
+                    </div>
+                  </div>
+                  <div class="bdt_input relative">
+                    <div>
+                      <span class="bdt_input_label">Going To</span>
+                      <span class="bdt_input_value" id="input2">
+                        {input2Text}
+                      </span>
+                    </div>
+                  </div>
+                  <button class="btn_swipe" onClick={handleSwipeClick}>
+                    <img
+                      src={SwaplIcon}
+                      class="scheme-secondary"
+                      alt="icon"
+                    />
+                  </button>
+                </div>
+
+                <div class="bdt_input_wrapper relative bg-white">
+                  <div class="bdt_input relative">
+                    <div>
+                      <span class="bdt_input_label">Date</span>
+                      <input type="date" name="" id="tota_date" />
+                    </div>
+                  </div>
+                  <div class="bdt_input relative">
+                    <div class="cursor-not-allowed opacity-50">
+                      <span class="bdt_input_label">Return Date</span>
+                      <span class="bdt_input_value">Pleaseselect</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bdt-trending-search pl-5">
+                <span class="font-medium mr-4">Trending Searches:</span>
+                <ul class="list-route">
+                    <li key={index}>
+                      <a
+                        class="cursor-pointer">
+                        <ul class="list-route-card">
+                          <li>{item.from}</li>
+                          <li>{item.to}</li>
+                        </ul>
+                      </a>
+                    </li>
+                </ul>
+              </div>
+              <div className="bdt-search-submit">
+                <button
+                  type="submit"
+                  className="btn btn-primary capitalize fw-bold"
+                  onClick={handleSubmit}
+                >
+                  search bus
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+  
+
+
+
+
+
+
+
 </body>
 </html>
