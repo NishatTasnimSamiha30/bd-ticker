@@ -253,6 +253,7 @@ button, input {
     gap: 10px;
     flex-wrap: wrap;
     display: inline-flex;
+
   }
   .list-route-card {
     display: flex;
@@ -268,10 +269,18 @@ button, input {
     background-color: #f0ebff;
   }
   .list-route-card li {
+    
     position: relative;
     color: #666;
     font-size: 12px;
   }
+
+  ul {
+    list-style-type: disc;
+}
+
+
+
   .list-route-card li:not(li:first-child):before {
     content: "";
     top: 50%;
