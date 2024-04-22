@@ -122,7 +122,7 @@ button, input {
   }
   .bdt_search_types li button.active {
     background-color: #e30b13;
-    color: #fff;
+    color: #f0f0f0;
     font-weight: bold;
   }
   .bdt_search_types li:last-child button {
@@ -242,7 +242,7 @@ button, input {
   
   
   
-  .bdt-search-wrapper .bdt-trending-search {
+  .bdt_search_wrapper .bdt-trending-search {
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -282,7 +282,7 @@ button, input {
     transform: translateY(-50%);
     background-position: 50%;
     background-repeat: no-repeat;
-    background-image: url('../images/icon_svg/svgRight.svg');
+    background-image: url('./pic/svg/right.svg');
   }
   
   
@@ -290,6 +290,16 @@ button, input {
     position: relative;
     padding-top: 15px;
   }
+  
+  .bdt_search_wrapper .bdt-search-submit button {
+    left: 50%;
+    bottom: -62.5px;
+    font-size: 14px;
+    border-radius: 6px;
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 700 !important;
+}
   .btn {
     font-size: 16px;
     text-transform: uppercase;
@@ -302,6 +312,7 @@ button, input {
     border-style: solid;
     display: inline-block;
     font-family: Nunito, sans-serif;
+    justify-content: center;
   }
   .btn-primary {
     background: #e30b13;
@@ -313,15 +324,7 @@ button, input {
     padding: 14px 40px;
     font-size: 14px;
   }
-  .bdt_search_wrapper .bdt-search-submit button {
-    left: 50%;
-    bottom: -62.5px;
-    font-size: 14px;
-    border-radius: 6px;
-    position: absolute;
-    transform: translateX(-50%);
-    font-weight: 700 !important;
-  }
+
   .capitalize {
     text-transform: capitalize !important;
   }

@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     
@@ -40,26 +41,26 @@
           <div class="bdt_search_inner">
             <ul class="bdt_search_types">
               <li>
-                <button class="active">
-                  <img src="pic/bus.svg" alt="Bus icon" />
+                <button class="active" style="font-weight:bold" >
+                  <img src="pic/svg/bus.svg" alt="Bus icon" />
                   BUS
                 </button>
               </li>
               <li>
-                <button class="">
+                <button class="air"style="font-weight:bold" >
                   <img src="pic/svg/air.svg" alt="Air icon" />
                   AIR
                 </button>
               </li>
               <li>
-                <button class="">
-                  <img src={ShipIcon} alt="Ship icon" />
+                <button class="ship"style="font-weight:bold" >
+                  <img src="./pic/svg/ship.svg" alt="Ship icon" />
                   SHIP
                 </button>
               </li>
               <li>
                 <button class="">
-                  <img src={SotelIcon} alt="Sotel icon" />
+                  <img src="pic/svg/hotel.svg" alt="Sotel icon" />
                   HOTEL
                 </button>
               </li>
@@ -71,7 +72,7 @@
                     <div>
                       <span class="bdt_input_label">Going From</span>
                       <span class="bdt_input_value" id="input1">
-                        {input1Text}
+                        Please select
                       </span>
                     </div>
                   </div>
@@ -79,13 +80,13 @@
                     <div>
                       <span class="bdt_input_label">Going To</span>
                       <span class="bdt_input_value" id="input2">
-                        {input2Text}
+                        Please select
                       </span>
                     </div>
                   </div>
-                  <button class="btn_swipe" onClick={handleSwipeClick}>
+                  <button class="btn_swipe">
                     <img
-                      src={SwaplIcon}
+                      src="./pic/svg/swap-red-light.svg"
                       class="scheme-secondary"
                       alt="icon"
                     />
@@ -111,25 +112,56 @@
               <div class="bdt-trending-search pl-5">
                 <span class="font-medium mr-4">Trending Searches:</span>
                 <ul class="list-route">
-                    <li key={index}>
-                      <a
-                        class="cursor-pointer">
-                        <ul class="list-route-card">
-                          <li>{item.from}</li>
-                          <li>{item.to}</li>
-                        </ul>
-                      </a>
+                    <li>
+                        <a style="cursor:pointer">
+                            <ul class="list-route-card">
+                                <li>dhaka</li>
+                                <li>rajshahi</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a style="cursor:pointer">
+                            <ul class="list-route-card">
+                                <li>dhaka</li>
+                                <li>barishal</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a style="cursor:pointer">
+                            <ul class="list-route-card">
+                                <li>dhaka</li>
+                                <li>cox-bazar</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a style="cursor:pointer">
+                            <ul class="list-route-card">
+                                <li>dhaka</li>
+                                <li>chittagong</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a style="cursor:pointer">
+                            <ul class="list-route-card">
+                                <li>dhaka</li>
+                                <li>chapainawabgonj</li>
+                            </ul>
+                        </a>
                     </li>
                 </ul>
               </div>
-              <div className="bdt-search-submit">
+              <div class="bdt-search-submit">
                 <button
-                  type="submit"
-                  className="btn btn-primary capitalize fw-bold"
-                  onClick={handleSubmit}
-                >
-                  search bus
-                </button>
+                type="submit"
+                class="btn btn-primary capitalize px-5 fw-bold">
+                Search Bus
+            </button>
+                
+
               </div>
             </div>
           </div>
