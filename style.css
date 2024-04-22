@@ -44,3 +44,17 @@
     border: 1px solid rgba(227, 11, 19, .5);
     border-right: 0;
 }
+a, button {
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s ease;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
